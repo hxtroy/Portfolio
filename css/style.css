@@ -88,6 +88,10 @@ img {
   overflow: visible;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
@@ -138,6 +142,7 @@ img {
 .stats-heading {
   max-width: 500px;
   margin: auto;
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .stats .gird h3 {
@@ -185,6 +190,15 @@ img {
 .about-sub-head img {
   width: 400px;
   justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.about-sub-head {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.features-head {
+  animation: slideInFromRight 1s ease-in;
 }
 
 .footer .social a {
@@ -214,6 +228,41 @@ img {
   .showcase-form {
     justify-self: center;
     margin: auto;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
