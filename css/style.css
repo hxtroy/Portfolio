@@ -182,10 +182,50 @@ img {
   transform: translateY(-15px);
 }
 
+.about-sub-head img {
+  width: 400px;
+  justify-self: flex-end;
+}
+
 .footer .social a {
   margin: 0px 10px;
 }
 
 .footer {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .gird,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
